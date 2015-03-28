@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtPeriodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Selecione o Período:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#00B200" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp" >
+
+            <Spinner
+                android:id="@+id/spMes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#fff" />
+
+            <Spinner
+                android:id="@+id/spAno"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="#fff" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Consultar"
+            android:textColor="#00B200" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="60dp" >
+
+            <TextView
+                android:id="@+id/txtResultadoMes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#00B200"
+                android:textSize="@dimen/fonteMedia" />
+            
+              <TextView
+                  android:id="@+id/txtResultadoAno"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="15dp"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:textColor="#00B200"
+                  android:textSize="@dimen/fonteMedia" />
+              
+                <TextView
+                    android:id="@+id/txtResultadoCifrao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/fonteMedia" />
+                
+                  <TextView
+                      android:id="@+id/txtResultadoValor"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp"
+                      android:textAppearance="?android:attr/textAppearanceLarge"
+                      android:textColor="#fff"
+                      android:textSize="@dimen/fonteMedia" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
